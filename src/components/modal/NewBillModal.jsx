@@ -219,6 +219,7 @@ function NewBillModal({ data, setData, onClose }) {
           )}
           <Button
             value={currStep.id === 3 ? "آماده سازی جهت چاپ" : "مرحله بعد"}
+            disable={createBillPending}
             onClick={() => clickHandler("+")}
           />
         </div>
